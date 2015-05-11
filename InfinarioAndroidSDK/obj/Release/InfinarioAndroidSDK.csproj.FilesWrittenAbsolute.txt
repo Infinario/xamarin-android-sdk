@@ -1,0 +1,6 @@
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Release/MonoAndroid,Version=v4.0.3.AssemblyAttribute.cs
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Release/InfinarioAndroidSDK.Jars.InfinarioAndroidSDK.jar
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/bin/Release/InfinarioAndroidSDK.dll.mdb
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/bin/Release/InfinarioAndroidSDK.dll
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Release/InfinarioAndroidSDK.dll
+/Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Release/InfinarioAndroidSDK.dll.mdb

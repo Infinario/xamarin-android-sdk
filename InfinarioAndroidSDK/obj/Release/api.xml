@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.infinario.android.infinariosdk">
+<class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" final="false" name="AlarmReceiver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlarmReceiver" static="false" type="com.infinario.android.infinariosdk.AlarmReceiver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" final="false" name="BootReceiver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BootReceiver" static="false" type="com.infinario.android.infinariosdk.BootReceiver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.infinario.android.infinariosdk.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.infinario.android.infinariosdk&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Command" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Command" static="false" type="com.infinario.android.infinariosdk.Command" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Long">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Command" static="false" type="com.infinario.android.infinariosdk.Command" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toMap" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="createdAt" static="false" transient="false" type="java.util.Date" type-generic-aware="java.util.Date" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="endpoint" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CommandManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CommandManager" static="false" type="com.infinario.android.infinariosdk.CommandManager" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="executeBatch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="schedule" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.infinario.android.infinariosdk.Command">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" final="false" name="ConnectivityReceiver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnectivityReceiver" static="false" type="com.infinario.android.infinariosdk.ConnectivityReceiver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Contract" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Contract" static="false" type="com.infinario.android.infinariosdk.Contract" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BULK_URL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/bulk&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAMPAIGN_COOKIE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;campaign_cookie&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COLUMN_COMMAND" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;command&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COLUMN_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COLUMN_RETRIES" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;retries&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;cookie&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CUSTOMER_ENDPOINT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;crm/customers&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATABASE_CREATE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;create table commands(id integer primary key autoincrement, command text not null, retries integer not null default 0);&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATABASE_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;commands.db&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATABASE_VERSION" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DB_REGISTRATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;__android_registration_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_AUTO_FLUSH" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_LIMIT" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_PUSH_NOTIFICATIONS" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_TARGET" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;https://api.infinario.com&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DELAYED_ALARM" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_ENDPOINT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;crm/events&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_REQUEST_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;request_code&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLUSH_COUNT" static="true" transient="false" type="int" type-generic-aware="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLUSH_DELAY" static="true" transient="false" type="long" type-generic-aware="long" value="10000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMMEDIATE_ALARM" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_RETRIES" static="true" transient="false" type="int" type-generic-aware="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NEGOTIATION_ENDPOINT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/crm/customers/track&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOTIFICATION_ID" static="true" transient="false" type="int" type-generic-aware="int" value="444" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Android&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PERIODIC_ALARM" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PING_TARGET" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;/system/time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;infinario&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_APP_VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;app_version&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_AUTO_FLUSH" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;auto_flush&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_ICON" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;icon&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_PUSH_NOTIFICATIONS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;push_notifications&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_REFERRER" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;referrer&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_REG_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;registration_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_SENDER_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sender_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_SESSION_END" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;session_end&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_SESSION_START" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;session_start&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_TARGET" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;target&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_TOKEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;token&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REGISTERED" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;registered&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SDK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;AndroidSDK&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SESSION_PING_INTERVAL" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SESSION_TIMEOUT" static="true" transient="false" type="int" type-generic-aware="int" value="20000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TABLE_COMMANDS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;commands&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;Infinario&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UPDATE_INTERVAL" static="true" transient="false" type="long" type-generic-aware="long" value="21600000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.5&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.Command" extends-generic-aware="com.infinario.android.infinariosdk.Command" final="false" name="Customer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Customer" static="false" type="com.infinario.android.infinariosdk.Customer" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="companyId" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="ids" static="false" transient="false" type="java.util.Map" type-generic-aware="java.util.Map&lt;java.lang.String, java.lang.String&gt;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="properties" static="false" transient="false" type="java.util.Map" type-generic-aware="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteOpenHelper" extends-generic-aware="android.database.sqlite.SQLiteOpenHelper" final="false" name="DbHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DbHelper" static="false" type="com.infinario.android.infinariosdk.DbHelper" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpgrade" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DbQueue" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DbQueue" static="false" type="com.infinario.android.infinariosdk.DbQueue" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Set&lt;java.lang.Integer&gt;">
+</parameter>
+<parameter name="p1" type="java.util.Set&lt;java.lang.Integer&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pop" native="false" return="java.util.List&lt;com.infinario.android.infinariosdk.Request&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pop" native="false" return="java.util.List&lt;com.infinario.android.infinariosdk.Request&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Integer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="schedule" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.infinario.android.infinariosdk.Command">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Device" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Device" static="false" type="com.infinario.android.infinariosdk.Device" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="deviceProperties" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.Command" extends-generic-aware="com.infinario.android.infinariosdk.Command" final="false" name="Event" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Event" static="false" type="com.infinario.android.infinariosdk.Event" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+<parameter name="p4" type="java.lang.Long">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="companyId" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="customerIds" static="false" transient="false" type="java.util.Map" type-generic-aware="java.util.Map&lt;java.lang.String, java.lang.String&gt;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="properties" static="false" transient="false" type="java.util.Map" type-generic-aware="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="type" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="HttpHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpHelper" static="false" type="com.infinario.android.infinariosdk.HttpHelper" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpHelper" static="false" type="com.infinario.android.infinariosdk.HttpHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="post" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="org.json.JSONObject">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IabHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IabHelper" static="false" type="com.infinario.android.infinariosdk.IabHelper" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispose" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseCodeFromIntent" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setupDone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startSetup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.infinario.android.infinariosdk.IabHelper.OnIabSetupFinishedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subscriptionsSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="BILLING_RESPONSE_RESULT_BILLING_UNAVAILABLE" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BILLING_RESPONSE_RESULT_OK" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IABHELPER_REMOTE_EXCEPTION" static="true" transient="false" type="int" type-generic-aware="int" value="-1001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INAPP_CONTINUATION_TOKEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;INAPP_CONTINUATION_TOKEN&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ITEM_TYPE_INAPP" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;inapp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ITEM_TYPE_SUBS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;subs&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESPONSE_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RESPONSE_CODE&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IabHelper.1" static="false" visibility="">
+<implements name="android.content.ServiceConnection" name-generic-aware="android.content.ServiceConnection">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+<parameter name="p1" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IabHelper.OnIabSetupFinishedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onIabSetupFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.infinario.android.infinariosdk.IabResult">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IabProxy" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IabProxy" static="false" type="com.infinario.android.infinariosdk.IabProxy" visibility="public">
+<parameter name="p0" type="android.os.IBinder">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSkuDetails" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="android.os.Bundle">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBillingSupported" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLoaded" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IabResult" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IabResult" static="false" type="com.infinario.android.infinariosdk.IabResult" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponse" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFailure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSuccess" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Infinario" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelPeriodicAlarm" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearStoredData" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disableAutomaticFlushing" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableAutomaticFlushing" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.infinario.android.infinariosdk.Infinario" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.infinario.android.infinariosdk.Infinario" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.infinario.android.infinariosdk.Infinario" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.infinario.android.infinariosdk.Infinario" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<parameter name="p3" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.infinario.android.infinariosdk.Infinario" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<parameter name="p1" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setupPeriodicAlarm" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="track" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="track" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="track" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="track" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+<parameter name="p2" type="java.lang.Long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="trackPurchases" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.2" static="true" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.SessionListener" extends-generic-aware="com.infinario.android.infinariosdk.SessionListener" final="false" name="Infinario.3" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.4" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="java.lang.Void...">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Manifest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="com.infinario.android.infinariosdk.Manifest" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Manifest.permission" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Manifest.permission" static="false" type="com.infinario.android.infinariosdk.Manifest.permission" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="C2D_MESSAGE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.example.gcm.permission.C2D_MESSAGE&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Preferences" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="clearStoredData" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ensureCookieId" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="com.infinario.android.infinariosdk.Preferences" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAutomaticFlushing" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCampaignCookieId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCookieId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPushNotifications" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReferrer" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRegistrationId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSenderId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSessionEnd" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSessionStart" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTarget" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getToken" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAutomaticFlushing" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCampaignCookieId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookieId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPushNotifications" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReferrer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRegistrationId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSenderId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setToken" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" extends-generic-aware="android.content.BroadcastReceiver" final="false" name="ReferrerReceiver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ReferrerReceiver" static="false" type="com.infinario.android.infinariosdk.ReferrerReceiver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Request" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Request" static="false" type="com.infinario.android.infinariosdk.Request" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCommand" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRetries" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Session" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Session" static="false" type="com.infinario.android.infinariosdk.Session" visibility="public">
+<parameter name="p0" type="com.infinario.android.infinariosdk.Preferences">
+</parameter>
+<parameter name="p1" type="com.infinario.android.infinariosdk.SessionListener">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="defaultProperties" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="defaultProperties" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Session.PingRunnable" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SessionListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SessionListener" static="false" type="com.infinario.android.infinariosdk.SessionListener" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SkuDetails" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SkuDetails" static="false" type="com.infinario.android.infinariosdk.SkuDetails" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrency" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDescription" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrice" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSku" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+</api>

@@ -4,3 +4,9 @@
 /Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/bin/Debug/InfinarioAndroidSDK.dll
 /Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Debug/InfinarioAndroidSDK.dll
 /Users/rolandrogansky/Projects/InfinarioAndroidSDK/InfinarioAndroidSDK/obj/Debug/InfinarioAndroidSDK.dll.mdb
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/obj/Debug/MonoAndroid,Version=v4.0.3.AssemblyAttribute.cs
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/obj/Debug/InfinarioAndroidSDK.Jars.InfinarioAndroidSDK.jar
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/bin/Debug/InfinarioAndroidSDK.dll.mdb
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/bin/Debug/InfinarioAndroidSDK.dll
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/obj/Debug/InfinarioAndroidSDK.dll
+/Users/rolandrogansky/GIT/XAMARIN_SDK/InfinarioAndroidSDK/obj/Debug/InfinarioAndroidSDK.dll.mdb

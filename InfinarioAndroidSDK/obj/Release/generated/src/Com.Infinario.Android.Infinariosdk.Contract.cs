@@ -195,7 +195,7 @@ namespace Com.Infinario.Android.Infinariosdk {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Contract']/field[@name='VERSION']"
 		[Register ("VERSION")]
-		public const string Version = (string) "1.0.5";
+		public const string Version = (string) "1.0.6";
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
 			get {

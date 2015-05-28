@@ -178,7 +178,7 @@
 </field>
 <field deprecated="not deprecated" final="true" name="UPDATE_INTERVAL" static="true" transient="false" type="long" type-generic-aware="long" value="21600000L" visibility="public" volatile="false">
 </field>
-<field deprecated="not deprecated" final="true" name="VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.5&quot;" visibility="public" volatile="false">
+<field deprecated="not deprecated" final="true" name="VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.6&quot;" visibility="public" volatile="false">
 </field>
 </class>
 <class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.Command" extends-generic-aware="com.infinario.android.infinariosdk.Command" final="false" name="Customer" static="false" visibility="public">
@@ -524,16 +524,6 @@
 </method>
 </class>
 <class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.SessionListener" extends-generic-aware="com.infinario.android.infinariosdk.SessionListener" final="false" name="Infinario.3" static="false" visibility=""/>
-<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.4" static="false" visibility="">
-<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
-<parameter name="p0" type="java.lang.Object[]">
-</parameter>
-</method>
-<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
-<parameter name="p0" type="java.lang.Void...">
-</parameter>
-</method>
-</class>
 <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Manifest" static="false" visibility="public">
 <constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="com.infinario.android.infinariosdk.Manifest" visibility="public">
 </constructor>

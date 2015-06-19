@@ -232,6 +232,76 @@ namespace Com.Infinario.Android.Infinariosdk {
 			}
 		}
 
+		static Delegate cb_getGoogleAdvertisingId;
+#pragma warning disable 0169
+		static Delegate GetGetGoogleAdvertisingIdHandler ()
+		{
+			if (cb_getGoogleAdvertisingId == null)
+				cb_getGoogleAdvertisingId = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetGoogleAdvertisingId);
+			return cb_getGoogleAdvertisingId;
+		}
+
+		static IntPtr n_GetGoogleAdvertisingId (IntPtr jnienv, IntPtr native__this)
+		{
+			global::Com.Infinario.Android.Infinariosdk.Preferences __this = global::Java.Lang.Object.GetObject<global::Com.Infinario.Android.Infinariosdk.Preferences> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.NewString (__this.GoogleAdvertisingId);
+		}
+#pragma warning restore 0169
+
+		static Delegate cb_setGoogleAdvertisingId_Ljava_lang_String_;
+#pragma warning disable 0169
+		static Delegate GetSetGoogleAdvertisingId_Ljava_lang_String_Handler ()
+		{
+			if (cb_setGoogleAdvertisingId_Ljava_lang_String_ == null)
+				cb_setGoogleAdvertisingId_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_SetGoogleAdvertisingId_Ljava_lang_String_);
+			return cb_setGoogleAdvertisingId_Ljava_lang_String_;
+		}
+
+		static void n_SetGoogleAdvertisingId_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::Com.Infinario.Android.Infinariosdk.Preferences __this = global::Java.Lang.Object.GetObject<global::Com.Infinario.Android.Infinariosdk.Preferences> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.GoogleAdvertisingId = p0;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getGoogleAdvertisingId;
+		static IntPtr id_setGoogleAdvertisingId_Ljava_lang_String_;
+		public virtual unsafe string GoogleAdvertisingId {
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Preferences']/method[@name='getGoogleAdvertisingId' and count(parameter)=0]"
+			[Register ("getGoogleAdvertisingId", "()Ljava/lang/String;", "GetGetGoogleAdvertisingIdHandler")]
+			get {
+				if (id_getGoogleAdvertisingId == IntPtr.Zero)
+					id_getGoogleAdvertisingId = JNIEnv.GetMethodID (class_ref, "getGoogleAdvertisingId", "()Ljava/lang/String;");
+				try {
+
+					if (GetType () == ThresholdType)
+						return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getGoogleAdvertisingId), JniHandleOwnership.TransferLocalRef);
+					else
+						return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getGoogleAdvertisingId", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
+				} finally {
+				}
+			}
+			// Metadata.xml XPath method reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Preferences']/method[@name='setGoogleAdvertisingId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+			[Register ("setGoogleAdvertisingId", "(Ljava/lang/String;)V", "GetSetGoogleAdvertisingId_Ljava_lang_String_Handler")]
+			set {
+				if (id_setGoogleAdvertisingId_Ljava_lang_String_ == IntPtr.Zero)
+					id_setGoogleAdvertisingId_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "setGoogleAdvertisingId", "(Ljava/lang/String;)V");
+				IntPtr native_value = JNIEnv.NewString (value);
+				try {
+					JValue* __args = stackalloc JValue [1];
+					__args [0] = new JValue (native_value);
+
+					if (GetType () == ThresholdType)
+						JNIEnv.CallVoidMethod  (Handle, id_setGoogleAdvertisingId_Ljava_lang_String_, __args);
+					else
+						JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setGoogleAdvertisingId", "(Ljava/lang/String;)V"), __args);
+				} finally {
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+		}
+
 		static Delegate cb_getIcon;
 #pragma warning disable 0169
 		static Delegate GetGetIconHandler ()

@@ -689,43 +689,6 @@ namespace Com.Infinario.Android.Infinariosdk {
 			}
 		}
 
-		static Delegate cb_trackPurchases_ILandroid_content_Intent_;
-#pragma warning disable 0169
-		static Delegate GetTrackPurchases_ILandroid_content_Intent_Handler ()
-		{
-			if (cb_trackPurchases_ILandroid_content_Intent_ == null)
-				cb_trackPurchases_ILandroid_content_Intent_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, int, IntPtr>) n_TrackPurchases_ILandroid_content_Intent_);
-			return cb_trackPurchases_ILandroid_content_Intent_;
-		}
-
-		static void n_TrackPurchases_ILandroid_content_Intent_ (IntPtr jnienv, IntPtr native__this, int p0, IntPtr native_p1)
-		{
-			global::Com.Infinario.Android.Infinariosdk.Infinario __this = global::Java.Lang.Object.GetObject<global::Com.Infinario.Android.Infinariosdk.Infinario> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			global::Android.Content.Intent p1 = global::Java.Lang.Object.GetObject<global::Android.Content.Intent> (native_p1, JniHandleOwnership.DoNotTransfer);
-			__this.TrackPurchases (p0, p1);
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_trackPurchases_ILandroid_content_Intent_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Infinario']/method[@name='trackPurchases' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='android.content.Intent']]"
-		[Register ("trackPurchases", "(ILandroid/content/Intent;)V", "GetTrackPurchases_ILandroid_content_Intent_Handler")]
-		public virtual unsafe void TrackPurchases (int p0, global::Android.Content.Intent p1)
-		{
-			if (id_trackPurchases_ILandroid_content_Intent_ == IntPtr.Zero)
-				id_trackPurchases_ILandroid_content_Intent_ = JNIEnv.GetMethodID (class_ref, "trackPurchases", "(ILandroid/content/Intent;)V");
-			try {
-				JValue* __args = stackalloc JValue [2];
-				__args [0] = new JValue (p0);
-				__args [1] = new JValue (p1);
-
-				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_trackPurchases_ILandroid_content_Intent_, __args);
-				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "trackPurchases", "(ILandroid/content/Intent;)V"), __args);
-			} finally {
-			}
-		}
-
 		static Delegate cb_update_Ljava_util_Map_;
 #pragma warning disable 0169
 		static Delegate GetUpdate_Ljava_util_Map_Handler ()

@@ -146,6 +146,8 @@
 </field>
 <field deprecated="not deprecated" final="true" name="PROPERTY_AUTO_FLUSH" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;auto_flush&quot;" visibility="public" volatile="false">
 </field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_GOOGLE_ADV_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;google_adv_id&quot;" visibility="public" volatile="false">
+</field>
 <field deprecated="not deprecated" final="true" name="PROPERTY_ICON" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;icon&quot;" visibility="public" volatile="false">
 </field>
 <field deprecated="not deprecated" final="true" name="PROPERTY_PUSH_NOTIFICATIONS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;push_notifications&quot;" visibility="public" volatile="false">
@@ -178,7 +180,7 @@
 </field>
 <field deprecated="not deprecated" final="true" name="UPDATE_INTERVAL" static="true" transient="false" type="long" type-generic-aware="long" value="21600000L" visibility="public" volatile="false">
 </field>
-<field deprecated="not deprecated" final="true" name="VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.6&quot;" visibility="public" volatile="false">
+<field deprecated="not deprecated" final="true" name="VERSION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.7&quot;" visibility="public" volatile="false">
 </field>
 </class>
 <class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.Command" extends-generic-aware="com.infinario.android.infinariosdk.Command" final="false" name="Customer" static="false" visibility="public">
@@ -492,18 +494,12 @@
 <parameter name="p2" type="java.lang.Long">
 </parameter>
 </method>
-<method abstract="false" deprecated="not deprecated" final="false" name="trackPurchases" native="false" return="void" static="false" synchronized="false" visibility="public">
-<parameter name="p0" type="int">
-</parameter>
-<parameter name="p1" type="android.content.Intent">
-</parameter>
-</method>
 <method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="boolean" static="false" synchronized="false" visibility="public">
 <parameter name="p0" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
 </parameter>
 </method>
 </class>
-<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.1" static="false" visibility="">
+<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.1" static="true" visibility="">
 <method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
 <parameter name="p0" type="java.lang.Object[]">
 </parameter>
@@ -513,17 +509,7 @@
 </parameter>
 </method>
 </class>
-<class abstract="false" deprecated="not deprecated" extends="android.os.AsyncTask" extends-generic-aware="android.os.AsyncTask&lt;java.lang.Void, java.lang.Void, java.lang.Void&gt;" final="false" name="Infinario.2" static="true" visibility="">
-<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
-<parameter name="p0" type="java.lang.Object[]">
-</parameter>
-</method>
-<method abstract="false" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="java.lang.Void" static="false" synchronized="false" visibility="protected">
-<parameter name="p0" type="java.lang.Void...">
-</parameter>
-</method>
-</class>
-<class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.SessionListener" extends-generic-aware="com.infinario.android.infinariosdk.SessionListener" final="false" name="Infinario.3" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="com.infinario.android.infinariosdk.SessionListener" extends-generic-aware="com.infinario.android.infinariosdk.SessionListener" final="false" name="Infinario.2" static="false" visibility=""/>
 <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Manifest" static="false" visibility="public">
 <constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="com.infinario.android.infinariosdk.Manifest" visibility="public">
 </constructor>
@@ -548,6 +534,8 @@
 <method abstract="false" deprecated="not deprecated" final="false" name="getCampaignCookieId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
 </method>
 <method abstract="false" deprecated="not deprecated" final="false" name="getCookieId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGoogleAdvertisingId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
 </method>
 <method abstract="false" deprecated="not deprecated" final="false" name="getIcon" native="false" return="int" static="false" synchronized="false" visibility="public">
 </method>
@@ -576,6 +564,10 @@
 </parameter>
 </method>
 <method abstract="false" deprecated="not deprecated" final="false" name="setCookieId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGoogleAdvertisingId" native="false" return="void" static="false" synchronized="false" visibility="public">
 <parameter name="p0" type="java.lang.String">
 </parameter>
 </method>

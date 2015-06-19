@@ -129,6 +129,10 @@ namespace Com.Infinario.Android.Infinariosdk {
 		[Register ("PROPERTY_AUTO_FLUSH")]
 		public const string PropertyAutoFlush = (string) "auto_flush";
 
+		// Metadata.xml XPath field reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Contract']/field[@name='PROPERTY_GOOGLE_ADV_ID']"
+		[Register ("PROPERTY_GOOGLE_ADV_ID")]
+		public const string PropertyGoogleAdvId = (string) "google_adv_id";
+
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Contract']/field[@name='PROPERTY_ICON']"
 		[Register ("PROPERTY_ICON")]
 		public const string PropertyIcon = (string) "icon";
@@ -195,7 +199,7 @@ namespace Com.Infinario.Android.Infinariosdk {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.infinario.android.infinariosdk']/class[@name='Contract']/field[@name='VERSION']"
 		[Register ("VERSION")]
-		public const string Version = (string) "1.0.6";
+		public const string Version = (string) "1.0.7";
 		internal static IntPtr java_class_handle;
 		internal static IntPtr class_ref {
 			get {
